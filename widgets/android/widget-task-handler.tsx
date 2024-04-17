@@ -13,7 +13,7 @@ export async function widgetTaskHandler(props: WidgetTaskHandlerProps) {
     case 'WIDGET_ADDED':
     case 'WIDGET_UPDATE':
     case 'WIDGET_RESIZED':
-      props.renderWidget(<HelloAppWidget widgetInfo={props.widgetInfo} image={"data:image/jpg;base64," + imageBase64} />);
+      props.renderWidget(<HelloAppWidget widgetInfo={props.widgetInfo} imageBase64={"data:image/jpg;base64," + imageBase64} />);
       break;
     default:
       break;

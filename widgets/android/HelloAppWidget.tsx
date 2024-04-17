@@ -1,7 +1,22 @@
 import React from "react";
-import { FlexWidget, TextWidget, ImageWidget } from "react-native-android-widget";
+import {
+  FlexWidget,
+  TextWidget,
+  ImageWidget,
+} from "react-native-android-widget";
 
-export function HelloAppWidget({ widgetInfo, image }) {
+interface HelloAppWidgetProps {
+  widgetInfo: {
+    width: number;
+    height: number;
+  };
+  imageBase64: string | undefined;
+}
+
+export function HelloAppWidget({
+  widgetInfo,
+  imageBase64,
+}: HelloAppWidgetProps) {
   return (
     <FlexWidget
       clickAction="OPEN_APP"
@@ -14,11 +29,15 @@ export function HelloAppWidget({ widgetInfo, image }) {
         borderRadius: 16,
       }}
     >
-      {image ? (
-        <ImageWidget image={image} imageWidth={widgetInfo.width} imageHeight={widgetInfo.height} />
+      {imageBase64 ? (
+        <ImageWidget
+          image={imageBase64 as `data:image${string}`}
+          imageWidth={widgetInfo.width}
+          imageHeight={widgetInfo.height}
+        />
       ) : (
         <TextWidget
-          text="Nothing yet"
+          text="Share your first image"
           style={{
             fontSize: 32,
             fontFamily: "Inter",

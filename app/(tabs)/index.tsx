@@ -25,7 +25,7 @@ export default function TabOneScreen() {
         console.log(imageBase64.substring(0, 100) + "...");
         requestWidgetUpdate({
           widgetName: "HelloAppWidget",
-          renderWidget: (props) => <HelloAppWidget image={"data:image/jpg;base64," + imageBase64} widgetInfo={props} />,
+          renderWidget: (props) => <HelloAppWidget imageBase64={"data:image/jpg;base64," + imageBase64} widgetInfo={props} />,
           widgetNotFound: () => {
             // Called if no widget is present on the home screen
           },
