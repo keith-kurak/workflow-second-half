@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,36 +11,36 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		53168AF92BCFB00800AF45F8 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53168AF82BCFB00800AF45F8 /* WidgetKit.framework */; };
-		53168AFB2BCFB00800AF45F8 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53168AFA2BCFB00800AF45F8 /* SwiftUI.framework */; };
-		53168AFE2BCFB00800AF45F8 /* HelloWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53168AFD2BCFB00800AF45F8 /* HelloWidgetBundle.swift */; };
-		53168B002BCFB00800AF45F8 /* HelloWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53168AFF2BCFB00800AF45F8 /* HelloWidget.swift */; };
-		53168B022BCFB00B00AF45F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53168B012BCFB00B00AF45F8 /* Assets.xcassets */; };
-		53168B062BCFB00B00AF45F8 /* HelloWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 53168AF72BCFB00800AF45F8 /* HelloWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5517AD9F60EF4738A05CBD4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72F00A516F30469689A4FFB6 /* Assets.xcassets */; };
+		56B5414576CB4945AA76D153 /* HelloWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE4853719149C0B1A4E821 /* HelloWidget.swift */; };
+		73F38807D510411CB1455875 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116129CED9D94DA0B9CC5370 /* WidgetKit.framework */; };
+		910A3F780EE5423F885D4E5E /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB352547D1AA4B9099E0F7B0 /* noop-file.swift */; };
+		917FE5E20D8D4D35A5D8EEA0 /* HelloWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE6DAA1B1F64A86B49089A4 /* HelloWidgetBundle.swift */; };
 		96905EF65AED1B983A6B3ABC /* libPods-workflowsecondhalf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-workflowsecondhalf.a */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
-		BC94C13C6DC7441698648E82 /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376B7A56A4C44A1382385E84 /* noop-file.swift */; };
+		C51F746191EF4B11B1257EBE /* HelloWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 38AD8A1663CD4A98ACF12786 /* HelloWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D82408E7475F4C5D9C958BAF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461704974EA74972BED41BD9 /* SwiftUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		53168B042BCFB00B00AF45F8 /* PBXContainerItemProxy */ = {
+		22CE6DD86790496BA4639607 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 53168AF62BCFB00800AF45F8;
-			remoteInfo = HelloWidgetExtension;
+			remoteGlobalIDString = 61FE276EC3C6470DBEFB1B8A;
+			remoteInfo = HelloWidget;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		53168B072BCFB00B00AF45F8 /* Embed Foundation Extensions */ = {
+		BAFFFBF45C5D4233842EDC33 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				53168B062BCFB00B00AF45F8 /* HelloWidgetExtension.appex in Embed Foundation Extensions */,
+				C51F746191EF4B11B1257EBE /* HelloWidget.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,28 +48,28 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		13B07F961A680F5B00A75B9A /* workflowsecondhalf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = workflowsecondhalf.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = workflowsecondhalf/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = workflowsecondhalf/AppDelegate.mm; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = workflowsecondhalf/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = workflowsecondhalf/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = workflowsecondhalf/main.m; sourceTree = "<group>"; };
-		376B7A56A4C44A1382385E84 /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "workflowsecondhalf/noop-file.swift"; sourceTree = "<group>"; };
-		53168AF72BCFB00800AF45F8 /* HelloWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HelloWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		53168AF82BCFB00800AF45F8 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
-		53168AFA2BCFB00800AF45F8 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		53168AFD2BCFB00800AF45F8 /* HelloWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWidgetBundle.swift; sourceTree = "<group>"; };
-		53168AFF2BCFB00800AF45F8 /* HelloWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWidget.swift; sourceTree = "<group>"; };
-		53168B012BCFB00B00AF45F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		53168B032BCFB00B00AF45F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		58EEBF8E8E6FB1BC6CAF49B5 /* libPods-workflowsecondhalf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-workflowsecondhalf.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C2E3173556A471DD304B334 /* Pods-workflowsecondhalf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-workflowsecondhalf.debug.xcconfig"; path = "Target Support Files/Pods-workflowsecondhalf/Pods-workflowsecondhalf.debug.xcconfig"; sourceTree = "<group>"; };
-		7A4D352CD337FB3A3BF06240 /* Pods-workflowsecondhalf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-workflowsecondhalf.release.xcconfig"; path = "Target Support Files/Pods-workflowsecondhalf/Pods-workflowsecondhalf.release.xcconfig"; sourceTree = "<group>"; };
-		81865FCA469D4725AA752425 /* workflowsecondhalf-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "workflowsecondhalf-Bridging-Header.h"; path = "workflowsecondhalf/workflowsecondhalf-Bridging-Header.h"; sourceTree = "<group>"; };
-		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = workflowsecondhalf/SplashScreen.storyboard; sourceTree = "<group>"; };
-		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
-		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-workflowsecondhalf/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		116129CED9D94DA0B9CC5370 /* WidgetKit.framework */ = {isa = PBXFileReference; fileEncoding = 4; includeInIndex = undefined; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		13B07F961A680F5B00A75B9A /* workflowsecondhalf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = wrapper.application; name = workflowsecondhalf.app; path = workflowsecondhalf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = workflowsecondhalf/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = workflowsecondhalf/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = workflowsecondhalf/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; name = Info.plist; path = workflowsecondhalf/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = main.m; path = workflowsecondhalf/main.m; sourceTree = "<group>"; };
+		38AD8A1663CD4A98ACF12786 /* HelloWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; name = HelloWidget.appex; path = HelloWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		461704974EA74972BED41BD9 /* SwiftUI.framework */ = {isa = PBXFileReference; fileEncoding = 4; includeInIndex = undefined; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		58EEBF8E8E6FB1BC6CAF49B5 /* libPods-workflowsecondhalf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = archive.ar; name = "libPods-workflowsecondhalf.a"; path = "libPods-workflowsecondhalf.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BDE4853719149C0B1A4E821 /* HelloWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = HelloWidget.swift; path = HelloWidget.swift; sourceTree = "<group>"; };
+		6C2E3173556A471DD304B334 /* Pods-workflowsecondhalf.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-workflowsecondhalf.debug.xcconfig"; path = "Target Support Files/Pods-workflowsecondhalf/Pods-workflowsecondhalf.debug.xcconfig"; sourceTree = "<group>"; };
+		72F00A516F30469689A4FFB6 /* Assets.xcassets */ = {isa = PBXFileReference; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A4D352CD337FB3A3BF06240 /* Pods-workflowsecondhalf.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-workflowsecondhalf.release.xcconfig"; path = "Target Support Files/Pods-workflowsecondhalf/Pods-workflowsecondhalf.release.xcconfig"; sourceTree = "<group>"; };
+		8E3A29D85ABC46379A5BDE8B /* workflowsecondhalf-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "workflowsecondhalf-Bridging-Header.h"; path = "workflowsecondhalf/workflowsecondhalf-Bridging-Header.h"; sourceTree = "<group>"; };
+		8F1D9D6F3D344C588AF647E5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; name = Info.plist; path = Info.plist; sourceTree = "<group>"; };
+		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = workflowsecondhalf/SplashScreen.storyboard; sourceTree = "<group>"; };
+		BAE6DAA1B1F64A86B49089A4 /* HelloWidgetBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = HelloWidgetBundle.swift; path = HelloWidgetBundle.swift; sourceTree = "<group>"; };
+		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; name = Expo.plist; path = Expo.plist; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; fileEncoding = 4; includeInIndex = undefined; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-workflowsecondhalf/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		FB352547D1AA4B9099E0F7B0 /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "workflowsecondhalf/noop-file.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,12 +81,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		53168AF42BCFB00800AF45F8 /* Frameworks */ = {
+		7A5C61BF843849228A57B7B6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53168AFB2BCFB00800AF45F8 /* SwiftUI.framework in Frameworks */,
-				53168AF92BCFB00800AF45F8 /* WidgetKit.framework in Frameworks */,
+				73F38807D510411CB1455875 /* WidgetKit.framework in Frameworks */,
+				D82408E7475F4C5D9C958BAF /* SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,8 +103,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				376B7A56A4C44A1382385E84 /* noop-file.swift */,
-				81865FCA469D4725AA752425 /* workflowsecondhalf-Bridging-Header.h */,
+				FB352547D1AA4B9099E0F7B0 /* noop-file.swift */,
+				8E3A29D85ABC46379A5BDE8B /* workflowsecondhalf-Bridging-Header.h */,
 			);
 			name = workflowsecondhalf;
 			sourceTree = "<group>";
@@ -114,21 +114,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				58EEBF8E8E6FB1BC6CAF49B5 /* libPods-workflowsecondhalf.a */,
-				53168AF82BCFB00800AF45F8 /* WidgetKit.framework */,
-				53168AFA2BCFB00800AF45F8 /* SwiftUI.framework */,
+				116129CED9D94DA0B9CC5370 /* WidgetKit.framework */,
+				461704974EA74972BED41BD9 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		53168AFC2BCFB00800AF45F8 /* HelloWidget */ = {
-			isa = PBXGroup;
-			children = (
-				53168AFD2BCFB00800AF45F8 /* HelloWidgetBundle.swift */,
-				53168AFF2BCFB00800AF45F8 /* HelloWidget.swift */,
-				53168B012BCFB00B00AF45F8 /* Assets.xcassets */,
-				53168B032BCFB00B00AF45F8 /* Info.plist */,
-			);
-			path = HelloWidget;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -141,9 +130,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				9BCA64B471564467872660DE /* HelloWidget */,
 				13B07FAE1A68108700A75B9A /* workflowsecondhalf */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				53168AFC2BCFB00800AF45F8 /* HelloWidget */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				D65327D7A22EEC0BE12398D9 /* Pods */,
@@ -158,7 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				13B07F961A680F5B00A75B9A /* workflowsecondhalf.app */,
-				53168AF72BCFB00800AF45F8 /* HelloWidgetExtension.appex */,
+				38AD8A1663CD4A98ACF12786 /* HelloWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,6 +158,18 @@
 				FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */,
 			);
 			name = workflowsecondhalf;
+			sourceTree = "<group>";
+		};
+		9BCA64B471564467872660DE /* HelloWidget */ = {
+			isa = PBXGroup;
+			children = (
+				5BDE4853719149C0B1A4E821 /* HelloWidget.swift */,
+				BAE6DAA1B1F64A86B49089A4 /* HelloWidgetBundle.swift */,
+				72F00A516F30469689A4FFB6 /* Assets.xcassets */,
+				8F1D9D6F3D344C588AF647E5 /* Info.plist */,
+			);
+			name = HelloWidget;
+			path = ../widgets/ios/;
 			sourceTree = "<group>";
 		};
 		BB2F792B24A3F905000567C9 /* Supporting */ = {
@@ -205,40 +206,40 @@
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "workflowsecondhalf" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
-				8FA6D79B5FFB551B55302310 /* [Expo] Configure project */,
+				F4FFF94323487E490949945A /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				3DE2B85919F286FBC28C3FFE /* [CP] Embed Pods Frameworks */,
-				53168B072BCFB00B00AF45F8 /* Embed Foundation Extensions */,
+				BAFFFBF45C5D4233842EDC33 /* Embed Foundation Extensions */,
+				15483B1FE29CEFE9C58F6456 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				53168B052BCFB00B00AF45F8 /* PBXTargetDependency */,
+				372982C256A7488CBF2E1961 /* PBXTargetDependency */,
 			);
 			name = workflowsecondhalf;
 			productName = workflowsecondhalf;
 			productReference = 13B07F961A680F5B00A75B9A /* workflowsecondhalf.app */;
 			productType = "com.apple.product-type.application";
 		};
-		53168AF62BCFB00800AF45F8 /* HelloWidgetExtension */ = {
+		61FE276EC3C6470DBEFB1B8A /* HelloWidget */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 53168B0A2BCFB00B00AF45F8 /* Build configuration list for PBXNativeTarget "HelloWidgetExtension" */;
+			buildConfigurationList = D33A7C0133C845CF9E3FA628 /* Build configuration list for PBXNativeTarget "HelloWidget" */;
 			buildPhases = (
-				53168AF32BCFB00800AF45F8 /* Sources */,
-				53168AF42BCFB00800AF45F8 /* Frameworks */,
-				53168AF52BCFB00800AF45F8 /* Resources */,
+				A9D08BC09B4742269CC20458 /* Sources */,
+				7A5C61BF843849228A57B7B6 /* Frameworks */,
+				5FA75617959241B5AD97FF76 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = HelloWidgetExtension;
-			productName = HelloWidgetExtension;
-			productReference = 53168AF72BCFB00800AF45F8 /* HelloWidgetExtension.appex */;
+			name = HelloWidget;
+			productName = HelloWidget;
+			productReference = 38AD8A1663CD4A98ACF12786 /* HelloWidget.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -247,14 +248,15 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1130;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1250;
 					};
-					53168AF62BCFB00800AF45F8 = {
-						CreatedOnToolsVersion = 15.3;
+					61FE276EC3C6470DBEFB1B8A = {
+						CreatedOnToolsVersion = 14.3;
+						DevelopmentTeam = undefined;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -272,7 +274,7 @@
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* workflowsecondhalf */,
-				53168AF62BCFB00800AF45F8 /* HelloWidgetExtension */,
+				61FE276EC3C6470DBEFB1B8A /* HelloWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -288,11 +290,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		53168AF52BCFB00800AF45F8 /* Resources */ = {
+		5FA75617959241B5AD97FF76 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53168B022BCFB00B00AF45F8 /* Assets.xcassets in Resources */,
+				5517AD9F60EF4738A05CBD4B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,9 +307,13 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
 			);
 			name = "Bundle React Native code and images";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,7 +342,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3DE2B85919F286FBC28C3FFE /* [CP] Embed Pods Frameworks */ = {
+		15483B1FE29CEFE9C58F6456 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -380,7 +386,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-workflowsecondhalf/Pods-workflowsecondhalf-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8FA6D79B5FFB551B55302310 /* [Expo] Configure project */ = {
+		F4FFF94323487E490949945A /* [Expo] Configure project */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -409,26 +415,26 @@
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */,
-				BC94C13C6DC7441698648E82 /* noop-file.swift in Sources */,
+				910A3F780EE5423F885D4E5E /* noop-file.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		53168AF32BCFB00800AF45F8 /* Sources */ = {
+		A9D08BC09B4742269CC20458 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53168B002BCFB00800AF45F8 /* HelloWidget.swift in Sources */,
-				53168AFE2BCFB00800AF45F8 /* HelloWidgetBundle.swift in Sources */,
+				917FE5E20D8D4D35A5D8EEA0 /* HelloWidgetBundle.swift in Sources */,
+				56B5414576CB4945AA76D153 /* HelloWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		53168B052BCFB00B00AF45F8 /* PBXTargetDependency */ = {
+		372982C256A7488CBF2E1961 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 53168AF62BCFB00800AF45F8 /* HelloWidgetExtension */;
-			targetProxy = 53168B042BCFB00B00AF45F8 /* PBXContainerItemProxy */;
+			target = 61FE276EC3C6470DBEFB1B8A /* HelloWidget */;
+			targetProxy = 22CE6DD86790496BA4639607 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -437,7 +443,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6C2E3173556A471DD304B334 /* Pods-workflowsecondhalf.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = workflowsecondhalf/workflowsecondhalf.entitlements;
@@ -449,11 +454,8 @@
 				);
 				INFOPLIST_FILE = workflowsecondhalf/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -464,7 +466,7 @@
 				PRODUCT_NAME = workflowsecondhalf;
 				SWIFT_OBJC_BRIDGING_HEADER = "workflowsecondhalf/workflowsecondhalf-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -474,18 +476,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7A4D352CD337FB3A3BF06240 /* Pods-workflowsecondhalf.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = workflowsecondhalf/workflowsecondhalf.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = workflowsecondhalf/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -495,61 +493,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.keithkurak.workflowsecondhalf;
 				PRODUCT_NAME = workflowsecondhalf;
 				SWIFT_OBJC_BRIDGING_HEADER = "workflowsecondhalf/workflowsecondhalf-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
-		53168B082BCFB00B00AF45F8 /* Debug */ = {
+		44F2FDDADFD54E50AB768258 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HelloWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = HelloWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.keithkurak.workflowsecondhalf.HelloWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		53168B092BCFB00B00AF45F8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "$accent";
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = "$widgetBackground";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -561,27 +515,23 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HelloWidget/Info.plist;
+				INFOPLIST_FILE = ../widgets/ios//Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = HelloWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MARKETING_VERSION = 1.0;
 				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.keithkurak.workflowsecondhalf.HelloWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "workflowsecondhalf/workflowsecondhalf-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -635,16 +585,16 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					/usr/lib/swift,
-					"$(inherited)",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
 				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift\"$(inherited)\"";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -693,21 +643,59 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					/usr/lib/swift,
-					"$(inherited)",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
 				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift\"$(inherited)\"";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		ACD0611CB6C44F32806F2881 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "$accent";
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = "$widgetBackground";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ../widgets/ios//Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HelloWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.keithkurak.workflowsecondhalf.HelloWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "workflowsecondhalf/workflowsecondhalf-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -721,20 +709,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		53168B0A2BCFB00B00AF45F8 /* Build configuration list for PBXNativeTarget "HelloWidgetExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				53168B082BCFB00B00AF45F8 /* Debug */,
-				53168B092BCFB00B00AF45F8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "workflowsecondhalf" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D33A7C0133C845CF9E3FA628 /* Build configuration list for PBXNativeTarget "HelloWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACD0611CB6C44F32806F2881 /* Debug */,
+				44F2FDDADFD54E50AB768258 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
