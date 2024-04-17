@@ -4,6 +4,10 @@ import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
+import { registerWidgetTaskHandler } from 'react-native-android-widget';
+import { widgetTaskHandler } from '@/widgets/android/widget-task-handler';
+
+registerWidgetTaskHandler(widgetTaskHandler);
 
 import { useColorScheme } from '@/components/useColorScheme';
 
