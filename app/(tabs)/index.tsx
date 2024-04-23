@@ -1,19 +1,28 @@
 import { useEffect, useState } from "react";
-import { StyleSheet, Image } from "react-native";
+import { StyleSheet, Image, Platform } from "react-native";
 import { requestWidgetUpdate } from "react-native-android-widget";
 import { HelloAppWidget } from "@/widgets/android/HelloAppWidget";
+import IosWidgetRefresh from "ios-widget-refresh";
 
 import EditScreenInfo from "@/components/EditScreenInfo";
 import { Text, View } from "@/components/Themed";
 
 import * as RNFS from "@dr.pogodin/react-native-fs";
 
+const getImagePath = async () => {
+  if (Platform.OS === "ios") {
+    return await RNFS.pathForGroup('group.com.keith-kurak.expo-widget-demo') + '/latest_share.jpg';
+  }
+
+  return `${RNFS.DocumentDirectoryPath}/latest_share.jpg`;
+}
+
 export default function TabOneScreen() {
   const [latestShare, setLatestShare] = useState<string | undefined>(undefined);
   useEffect(() => {
     (async function doAsync() {
       try {
-        const latestSharePath = `${RNFS.DocumentDirectoryPath}/latest_share.jpg`;
+        const latestSharePath = await getImagePath();
         const result = await RNFS.downloadFile({
           fromUrl:
             "https://openaccess-cdn.clevelandart.org/1958.67/1958.67_web.jpg",
@@ -22,6 +31,9 @@ export default function TabOneScreen() {
         console.log(result);
         const imageBase64 = await RNFS.readFile(latestSharePath, "base64");
         setLatestShare(imageBase64);
+        if (Platform.OS === "ios") {
+          IosWidgetRefresh.reloadWidget();
+        } else {
         console.log(imageBase64.substring(0, 100) + "...");
         requestWidgetUpdate({
           widgetName: "HelloAppWidget",
@@ -30,6 +42,7 @@ export default function TabOneScreen() {
             // Called if no widget is present on the home screen
           },
         });
+      }
       } catch (e) {
         console.log(e);
       }

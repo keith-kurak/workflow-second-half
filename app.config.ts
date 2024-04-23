@@ -19,6 +19,11 @@ module.exports = ({ config }: { config: ExpoConfig }) => {
     ios: {
       supportsTablet: true,
       bundleIdentifier: "com.keithkurak.workflowsecondhalf",
+      entitlements: {
+        "com.apple.security.application-groups": [
+          "group.com.keithkurak.workflowsecondhalf",
+        ],
+      },
     },
     android: {
       adaptiveIcon: {
@@ -48,7 +53,7 @@ module.exports = ({ config }: { config: ExpoConfig }) => {
           },
         },
       ],
-      ["./plugins/withWidget.ts"]
+      ["./plugins/withWidget.ts"],
     ],
     experiments: {
       typedRoutes: true,

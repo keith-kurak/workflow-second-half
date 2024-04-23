@@ -107,6 +107,11 @@ const withIosWidget: ConfigPlugin = (config) => {
             path: "Info.plist",
             sourceTree: "<group>",
           }),
+          // @ts-expect-error
+          PBXFileReference.create(project, {
+            path: "widget.entitlements",
+            sourceTree: "<group>",
+          }),
         ],
       });
 
@@ -167,6 +172,11 @@ const withIosWidget: ConfigPlugin = (config) => {
       widgetTarget.createBuildPhase(PBXResourcesBuildPhase, {
         files: [...assetFiles],
       });
+
+      widgetTarget.setBuildSetting(
+        "CODE_SIGN_ENTITLEMENTS",
+        path.join(widgetFolderRelativeToIosProject, "widget.entitlements")
+      );
 
       const mainAppTarget = project.rootObject.getMainAppTarget("ios");
 
