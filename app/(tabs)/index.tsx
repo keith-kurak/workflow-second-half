@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { StyleSheet, Image, Platform } from "react-native";
 import { requestWidgetUpdate } from "react-native-android-widget";
 import { HelloAppWidget } from "@/widgets/android/HelloAppWidget";
-import IosWidgetRefresh from "local:ios-widget-refresh";
+import IosWidgetRefresh from "@/modules/ios-widget-refresh";
 
 import EditScreenInfo from "@/components/EditScreenInfo";
 import { Text, View } from "@/components/Themed";
