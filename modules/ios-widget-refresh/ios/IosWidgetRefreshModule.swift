@@ -1,4 +1,5 @@
 import ExpoModulesCore
+import WidgetKit
 
 public class IosWidgetRefreshModule: Module {
   public func definition() -> ModuleDefinition {

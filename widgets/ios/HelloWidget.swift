@@ -19,7 +19,7 @@ struct Provider: TimelineProvider {
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        guard let groupDir = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.expo.appjs-workflows-code") else {
+        guard let groupDir = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.keithkurak.workflowsecondhalf") else {
         fatalError("could not get shared app group directory.")
         }
 
@@ -40,14 +40,14 @@ struct Provider: TimelineProvider {
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
-    let emoji: String
+    let imageData: Data?
 }
 
 struct HelloWidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        Image(uiImage: Helper.getImgFromUserDefaults(key: photo))
+      Image(uiImage: UIImage(data: entry.imageData!)!)
             .resizable()
             .scaledToFill()
             .frame(width: 100, height:100)

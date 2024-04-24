@@ -11,7 +11,7 @@ import * as RNFS from "@dr.pogodin/react-native-fs";
 
 const getImagePath = async () => {
   if (Platform.OS === "ios") {
-    return await RNFS.pathForGroup('group.com.keith-kurak.expo-widget-demo') + '/latest_share.jpg';
+    return await RNFS.pathForGroup('group.com.keithkurak.workflowsecondhalf') + '/latest_share.jpg';
   }
 
   return `${RNFS.DocumentDirectoryPath}/latest_share.jpg`;
